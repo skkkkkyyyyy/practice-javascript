@@ -13,7 +13,7 @@ gameSelector.addEventListener("change",function(){
         case "click-counter":
             ClickCounterGAME();
             break;
-        case "number-guess":
+        case "numbe-guess":
             NumberGuessGame();
             break;
 
