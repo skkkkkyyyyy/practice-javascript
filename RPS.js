@@ -23,7 +23,7 @@ function RPS(){
 
     let enemyImage = document.createElement('img');
     enemyImage.alt = "Choice";
-    enemyimage.style.width = "300px";
+    enemyImage.style.width = "300px";
     enemyImage.style.height = "200x";
 
 
@@ -53,7 +53,7 @@ function RPS(){
         let enemyHand = choices[Math.floor(Math.random() * choices.length)];
         
         
-        switch(select.value){
+        switch(enemyHand){
             case"gu":
                 enemyImage.src="https://lohas.nicoseiga.jp/thumb/10685658i?1620044293"
                 break;
@@ -69,6 +69,7 @@ function RPS(){
         }
     })
     gameContainer.appendChild(image);
+    gameContainer.appendChild(enemyImage);
 }
 
  //let select = document.createElement("select");
