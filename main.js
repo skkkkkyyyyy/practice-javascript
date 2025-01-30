@@ -47,7 +47,7 @@
 
 function startNumberGuessGame(){
 
-    let count = 0;
+    //let count = 0;
     let counter = document.createElement("p");
     counter.textContent = count;
 
@@ -55,7 +55,7 @@ function startNumberGuessGame(){
     const randomNumber = Math.floor(Math.random() * 100) + 1;
     
     let message = document.createElement("p");
-    message.textContent =  randomNumber;
+    //message.textContent =  randomNumber;
     
     let input = document.createElement("input");
     input.type = "number";
@@ -67,10 +67,10 @@ function startNumberGuessGame(){
 
     let button = document.createElement("button");
     button.textContent = "確認"
-    button.addEventListener("click",function(){
-        count++;
-        counter.textContent = count;
-    })
+    // button.addEventListener("click",function(){
+    //     count++;
+    //     counter.textContent = count;
+    // })
 
 
     button.addEventListener("click",function(){
@@ -96,6 +96,13 @@ function startNumberGuessGame(){
     })
 
     gameContainer.appendChild(button);
-    gameContainer.appendChild(counter);
+   
+
+    let count = 0;
+    const countDisplay = document.createElement("p");
+    constDisplay.textContent = `試行回数: ${count}`;
+    
+    gameContainer.appendChild(countDisplay);
 }
 startNumberGuessGame();
+
